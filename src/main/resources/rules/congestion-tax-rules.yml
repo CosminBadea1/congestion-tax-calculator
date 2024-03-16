@@ -1,0 +1,58 @@
+congestion-tax-rules-by-city:
+  gothenburg:
+    max-charge-per-day: 60
+    single-charge-rule:
+      enabled: true
+      window-duration-in-minutes: 60
+    tax-exempt-vehicles:
+      - EMERGENCY
+      - BUS
+      - DIPLOMAT
+      - MOTORCYCLE
+      - MILITARY
+      - FOREIGN
+    congestion-tax-intervals:
+      -
+        start-time: "06:00"
+        end-time: "06:29"
+        amount: 8
+      -
+        start-time: "06:30"
+        end-time: "06:59"
+        amount: 13
+      -
+        start-time: "07:00"
+        end-time: "07:59"
+        amount: 18
+      -
+        start-time: "08:00"
+        end-time: "08:29"
+        amount: 13
+      -
+        start-time: "08:30"
+        end-time: "14:59"
+        amount: 8
+      -
+        start-time: "15:00"
+        end-time: "15:29"
+        amount: 13
+      -
+        start-time: "15:30"
+        end-time: "16:59"
+        amount: 18
+      -
+        start-time: "17:00"
+        end-time: "17:59"
+        amount: 13
+      -
+        start-time: "18:00"
+        end-time: "18:29"
+        amount: 8
+      -
+        start-time: "18:30"
+        end-time: "23:59"
+        amount: 0
+      -
+        start-time: "00:00"
+        end-time: "05:59"
+        amount: 0

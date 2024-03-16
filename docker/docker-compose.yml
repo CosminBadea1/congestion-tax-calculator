@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  congestion-tax-calculator:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    restart: on-failure
+    ports:
+      - "8000:8181"
